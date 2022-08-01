@@ -2,7 +2,30 @@
 <html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
-	<meta http-equiv = "refresh" content = "0; url = https://xn--gdv240dihhgma.jp" />
+<script>
+// Original: https://qiita.com/mtoutside/items/8877c65cfae49893e79e
+
+const baseUrl = 'https://honorific.app/';
+const browserLang = (window.navigator.languages && window.navigator.languages[0]) ||
+window.navigator.language ||
+window.navigator.userLanguage ||
+window.navigator.browserLanguage;
+
+switch(browserLang) {
+case 'zh-CN':
+case 'zh-Hans':
+case 'zh-SG':
+case 'zh-Hant':
+case 'zh-MO':
+case 'zh-HK':
+case 'zh-TW':
+  location.href = `${baseUrl}/zh-hans/`;
+  break;
+default:
+  location.href = `https://xn--gdv240dihhgma.jp/`;
+  break;
+}
+</script>
 </head>
 <body>
 </body>
