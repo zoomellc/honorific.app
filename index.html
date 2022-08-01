@@ -15,12 +15,13 @@ switch(browserLang) {
 case 'zh-CN':
 case 'zh-Hans':
 case 'zh-SG':
+  location.href = `${baseUrl}/zh-hans/`;
+  break;
 case 'zh-Hant':
 case 'zh-MO':
 case 'zh-HK':
 case 'zh-TW':
-  location.href = `${baseUrl}/zh-hans/`;
-  break;
+  location.href = `${baseUrl}/zh-hant/`;
 default:
   location.href = `https://xn--gdv240dihhgma.jp/`;
   break;
