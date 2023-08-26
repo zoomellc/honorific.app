@@ -5,7 +5,7 @@
 <script>
 // Original: https://qiita.com/mtoutside/items/8877c65cfae49893e79e
 
-const baseUrl = 'https://honorific.app/';
+const baseUrl = 'https://honorific.app';
 const browserLang = (window.navigator.languages && window.navigator.languages[0]) ||
 window.navigator.language ||
 window.navigator.userLanguage ||
@@ -23,7 +23,7 @@ case 'zh-HK':
 case 'zh-TW':
   location.href = `${baseUrl}/zh-hant/`;
 default:
-  location.href = `https://xn--gdv240dihhgma.jp/`;
+  location.href = `${baseUrl}/ja/`;
   break;
 }
 </script>
